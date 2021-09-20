@@ -1,5 +1,4 @@
-import image from 'next/image';
-import axios from 'axios';
+import Image from 'next/image';
 
 import styles from '../styles/Home.module.css'
 import NavigationBar from '../components/navigation_bar';
@@ -15,8 +14,8 @@ const Location = ({ coffeePlace, id }) => {
 };
 
 Location.getInitialProps = async({ query }) => {
-    const res = await axios.get(`https://pdbkut2xpg.ap-northeast-1.awsapprunner.com/coffee/${query.id}`);
-    const coffeeData = res.data;
+    const res = await fetch(`https://fi8nnism5h.execute-api.ap-southeast-2.amazonaws.com/default/testCoffee?id=${query.id}`);
+    const coffeeData = await res.json();
     return { id: query.id, coffeePlace: coffeeData};
 };
 

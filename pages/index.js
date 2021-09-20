@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image'
-import axios from 'axios';
+import Image from 'next/image';
 
 import styles from '../styles/Home.module.css'
 import NavigationBar from '../components/navigation_bar';
@@ -42,9 +41,9 @@ const Home = ({ coffee }) => {
 };
 
 Home.getInitialProps = async() => {
-  const res = await axios.get("https://pdbkut2xpg.ap-northeast-1.awsapprunner.com/coffee");
-  const coffeeData = res.data;
-  return { coffee: coffeeData};
+  const res = await fetch("https://fi8nnism5h.execute-api.ap-southeast-2.amazonaws.com/default/testCoffee/");
+  const coffeeData = await res.json();
+  return { coffee: coffeeData };
 };
 
 export default Home;
