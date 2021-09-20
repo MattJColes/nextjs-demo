@@ -3,17 +3,17 @@ import Link from 'next/link';
 const NavigationBar = () => {
     const style = {
         display: 'flex',
-        backgroundColor: '#442211',
+        backgroundColor: '#96736C',
         justifyContent: 'center',
         padding: '0.5rem',
     }
     return (
         <div style={style}>
             <Link href="/">
-                <a>Home</a>
+                <a class="navbar_item">HOME</a>
             </Link>
             <Link href="/about">
-                <a>About</a>
+                <a class="navbar_item">ABOUT</a>
             </Link>
         </div>
     );

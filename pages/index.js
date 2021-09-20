@@ -11,7 +11,7 @@ const Home = ({ coffee }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Coffee Locations</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -26,6 +26,7 @@ const Home = ({ coffee }) => {
           width={200}
           height={250}
         />
+        <h3>Rcent coffee places visited:</h3>
         <ul>
           {coffee.map(coffee => (
             <li key={coffee.id}>

@@ -6,11 +6,30 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 a {
-  color: inherit;
   text-decoration: none;
+}
+
+p {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 0;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.navbar_item {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  font-weight: strong;
 }

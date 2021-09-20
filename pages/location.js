@@ -3,13 +3,17 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css'
 import NavigationBar from '../components/navigation_bar';
 
+
 const Location = ({ coffeePlace, id }) => {
     return (
-        <div className={styles.container}>
+        <main className={styles.main}>
             <NavigationBar/>
-            <h1>{coffeePlace.locationName}</h1>
-            <p>{coffeePlace.locationDescription}</p>
-        </div>
+            <h1 className={styles.title}>{coffeePlace.locationName}</h1>
+            <Image src={`/images/${coffeePlace.locationPhoto}`} alt="coffee" width="200" height="250" />
+            <p><strong>About the place:</strong> {coffeePlace.locationDescription}</p>
+            <p></p>
+            <p><strong>Mini review:</strong> {coffeePlace.locationReview} | <strong>Score:</strong> {coffeePlace.locationStars}   </p>
+        </main>
     );
 };
 
