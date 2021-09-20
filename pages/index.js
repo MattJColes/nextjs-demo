@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import image from 'next/image';
 import Image from 'next/image'
 import axios from 'axios';
 
