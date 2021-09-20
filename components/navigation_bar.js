@@ -10,10 +10,10 @@ const NavigationBar = () => {
     return (
         <div style={style}>
             <Link href="/">
-                <a class="navbar_item">HOME</a>
+                <a className="navbar_item">HOME</a>
             </Link>
             <Link href="/about">
-                <a class="navbar_item">ABOUT</a>
+                <a className="navbar_item">ABOUT</a>
             </Link>
         </div>
     );

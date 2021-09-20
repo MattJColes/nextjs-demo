@@ -18,8 +18,6 @@ const Location = ({ coffeePlace, id }) => {
 };
 
 Location.getInitialProps = async({ query }) => {
-    // const res = await fetch(`https://fi8nnism5h.execute-api.ap-southeast-2.amazonaws.com/default/testCoffee?id=${query.id}`);
-    // const coffeeData = await res.json();
     const res = require('../public/locations.json');
     const coffeeData = res[query.id];
     return { id: query.id, coffeePlace: coffeeData};
