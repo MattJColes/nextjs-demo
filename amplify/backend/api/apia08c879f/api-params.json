@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/coffee",
+      "lambdaFunction": "nextjsdemo94b139d9",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/coffee"
+    }
+  ],
+  "resourceName": "apia08c879f",
+  "apiName": "apia08c879f",
+  "functionArns": [
+    {
+      "lambdaFunction": "nextjsdemo94b139d9"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-nextjsdemo-dev-122456-authRole",
+    "unAuthRoleName": "amplify-nextjsdemo-dev-122456-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "nextjsdemo94b139d9",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
