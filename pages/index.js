@@ -45,7 +45,7 @@ Home.getInitialProps = async() => {
   // const res = require('../public/locations.json');
   // const coffeeData = res;
 
-  const res = await fetch("https://17fd6h4x69.execute-api.ap-southeast-2.amazonaws.com/dev/coffee");
+  const res = await fetch("https://bkcm6x6ji2.execute-api.ap-southeast-2.amazonaws.com/nextdemo/coffee");
   const coffeeData = await res.json();
 
   return { coffee: coffeeData };
